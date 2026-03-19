@@ -11,7 +11,7 @@ async function uploadFile() {
     try {
         status.innerText = "Requesting upload URL...";
 
-        const response = await fetch("https://main.d2iwjmf0554nv9.amplifyapp.com//upload-url");
+        const response = await fetch("https://main.d2iwjmf0554nv9.amplifyapp.com/upload-url");
 
         if (!response.ok) {
             throw new Error(`Failed to get upload URL: ${response.status}`);
